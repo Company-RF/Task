@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta
+      name="description"
+      content="سيرة ذاتية تفاعلية تعرض المشاريع والمهارات"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="index.html">
+          <img src="assets/img/logo.png" alt="logo" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">المتجر</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="calculator.html">الحاسبة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تواصل معي</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <button class="theme-toggle-btn" data-theme-toggle></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="section-pad pb-0 text-center">
+      <div class="container">
+        <span class="eyebrow mx-auto">أداة</span>
+        <h1 class="section-title">حاسبة بسيطة</h1>
+        <div class="ornament-divider mt-4"><span></span></div>
+        <p class="fs-5 col-lg-7 mx-auto">عمليات حسابية أساسية مباشرة.</p>
+      </div>
+    </header>
+
+    <section class="section-pad pt-4">
+      <div class="container">
+        <div class="calculator-shell">
+          <div class="calculator-screen">
+            <div class="expr" id="calcExpr">&nbsp;</div>
+            <div class="result" id="calcResult">0</div>
+          </div>
+
+          <div class="row g-2">
+            <div class="col-3">
+              <button class="calc-btn op" data-action="clear">C</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn op" data-action="backspace">
+                <i class="bi bi-backspace"></i>
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn op" data-value="%">%</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn op" data-value="/">÷</button>
+            </div>
+
+            <div class="col-3">
+              <button class="calc-btn" data-value="7">7</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn" data-value="8">8</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn" data-value="9">9</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn op" data-value="*">×</button>
+            </div>
+
+            <div class="col-3">
+              <button class="calc-btn" data-value="4">4</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn" data-value="5">5</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn" data-value="6">6</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn op" data-value="-">−</button>
+            </div>
+
+            <div class="col-3">
+              <button class="calc-btn" data-value="1">1</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn" data-value="2">2</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn" data-value="3">3</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn op" data-value="+">+</button>
+            </div>
+
+            <div class="col-6">
+              <button
+                class="calc-btn"
+                data-value="0"
+                style="aspect-ratio: unset; height: 100%"
+              >
+                0
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn" data-value=".">.</button>
+            </div>
+            <div class="col-3">
+              <button class="calc-btn equal" data-action="equal">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h4 class="brand-font text-white text-center">
+              <a class="navbar-brand navbar-brand-custom" href="index.html">
+                <img src="assets/img/logo.png" alt="logo" class="img-fluid" />
+              </a>
+            </h4>
+            <p class="small text-center">
+              سيرة ذاتية تفاعلية صُممت لتعكس شغفي بتطوير الواجهات الأمامية.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="text-white">روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li><a href="blog.html">المدونة</a></li>
+              <li><a href="shop.html">المتجر</a></li>
+              <li><a href="calculator.html">الحاسبة</a></li>
+              <li><a href="contact.html">تواصل معي</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-white">تابعني</h5>
+            <a href="#" class="social-icon-link" aria-label="لينكدإن"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/Company-RF"
+              class="social-icon-link"
+              aria-label="جيت هاب"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a href="#" class="social-icon-link" aria-label="تويتر"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center small mb-0">
+          © 2026 رهف فرحات. جميع الحقوق محفوظة.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      // ============================================
+      // منطق الحاسبة البسيطة
+      // ============================================
+      const exprEl = document.getElementById("calcExpr");
+      const resultEl = document.getElementById("calcResult");
+      let expression = "";
+
+      function displayToArabicOps(str) {
+        return str.replace(/\*/g, "×").replace(/\//g, "÷").replace(/-/g, "−");
+      }
+
+      function updateScreen() {
+        exprEl.textContent = expression
+          ? displayToArabicOps(expression)
+          : "\u00A0";
+      }
+
+      function safeEvaluate(expr) {
+        // السماح فقط بالأرقام والعمليات الأساسية والنقطة والنسبة المئوية
+        if (!/^[0-9+\-*/.%\s]*$/.test(expr)) return null;
+        try {
+          // eslint-disable-next-line no-new-func
+          const value = Function(
+            '"use strict"; return (' + expr.replace(/%/g, "/100") + ")",
+          )();
+          if (typeof value !== "number" || !isFinite(value)) return null;
+          return Math.round(value * 1e10) / 1e10;
+        } catch (e) {
+          return null;
+        }
+      }
+
+      document.querySelectorAll(".calc-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const action = btn.dataset.action;
+          const value = btn.dataset.value;
+
+          if (action === "clear") {
+            expression = "";
+            resultEl.textContent = "0";
+            updateScreen();
+            return;
+          }
+
+          if (action === "backspace") {
+            expression = expression.slice(0, -1);
+            updateScreen();
+            resultEl.textContent = expression
+              ? (safeEvaluate(expression) ?? resultEl.textContent)
+              : "0";
+            return;
+          }
+
+          if (action === "equal") {
+            const value = safeEvaluate(expression);
+            if (value === null) {
+              resultEl.textContent = "خطأ";
+            } else {
+              resultEl.textContent = value;
+              expression = String(value);
+            }
+            updateScreen();
+            return;
+          }
+
+          // منع بدء التعبير بعملية حسابية (باستثناء الطرح)
+          if (["+", "*", "/", "%"].includes(value) && expression === "") return;
+
+          expression += value;
+          updateScreen();
+
+          const live = safeEvaluate(expression);
+          if (live !== null) resultEl.textContent = live;
+        });
+      });
+
+      updateScreen();
+    </script>
+  </body>
+</html>

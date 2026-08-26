@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta
+      name="description"
+      content="سيرة ذاتية تفاعلية تعرض المشاريع والمهارات"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="index.html">
+          <img src="assets/img/logo.png" alt="logo" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog.html">المدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">المتجر</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calculator.html">الحاسبة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تواصل معي</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <button class="theme-toggle-btn" data-theme-toggle></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="section-pad pb-0 text-center">
+      <div class="container">
+        <span class="eyebrow mx-auto">المدونة</span>
+        <h1 class="section-title">مقالات في عالم التطوير</h1>
+        <div class="ornament-divider mt-2"><span></span></div>
+        <p class="fs-5 col-lg-7 mx-auto">
+          أفكار وتجارب قصيرة أشاركها من رحلتي في تطوير الواجهات الأمامية.
+        </p>
+      </div>
+    </header>
+
+    <section class="section-pad pt-4">
+      <div class="container">
+        <div class="row g-4">
+          <!-- مقال 1 -->
+          <div class="col-md-6">
+            <article class="card-custom p-4">
+              <span class="blog-date"
+                ><i class="bi bi-calendar3"></i> 3 أغسطس 2026</span
+              >
+              <h3 class="mt-2">خمس عادات تُحسّن كتابتك لـCSS</h3>
+              <p>
+                الكتابة النظيفة لأكواد CSS ليست مجرد شكل جمالي، بل أساس لصيانة
+                أسهل ومشاريع أكثر استقراراً على المدى الطويل...
+              </p>
+              <button class="btn btn-outline-brand btn-sm read-more-btn">
+                قراءة المزيد
+              </button>
+              <div class="blog-fulltext">
+                <p>
+                  من أهم هذه العادات: تسمية الأصناف بشكل واضح، تجميع القواعد ذات
+                  الصلة معاً، الاعتماد على متغيرات CSS بدلاً من تكرار القيم،
+                  تنظيم الملفات حسب المكوّن، واختبار التصميم على أحجام شاشات
+                  متعددة قبل اعتماده النهائي.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- مقال 2 -->
+          <div class="col-md-6">
+            <article class="card-custom p-4">
+              <span class="blog-date"
+                ><i class="bi bi-calendar3"></i> 22 يوليو 2026</span
+              >
+              <h3 class="mt-2">لماذا يستحق Bootstrap 5 وقتك؟</h3>
+              <p>
+                رغم كثرة أطر العمل الحديثة، لا يزال Bootstrap خياراً ممتازاً
+                لبناء واجهات سريعة ومتجاوبة دون تعقيد زائد...
+              </p>
+              <button class="btn btn-outline-brand btn-sm read-more-btn">
+                قراءة المزيد
+              </button>
+              <div class="blog-fulltext">
+                <p>
+                  يوفر Bootstrap نظام شبكة مرناً، مكوّنات جاهزة كالبطاقات
+                  والنماذج، ودعماً ممتازاً للغة العربية عبر نسخته RTL، مما يجعله
+                  مناسباً للمبتدئين والمحترفين على حد سواء.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- مقال 3 -->
+          <div class="col-md-6">
+            <article class="card-custom p-4">
+              <span class="blog-date"
+                ><i class="bi bi-calendar3"></i> 10 يوليو 2026</span
+              >
+              <h3 class="mt-2">أساسيات JavaScript لكل مطوّر واجهات</h3>
+              <p>
+                لا يكفي إتقان HTML وCSS وحدهما؛ فإضافة التفاعل عبر JavaScript هي
+                ما يمنح الموقع حياة حقيقية...
+              </p>
+              <button class="btn btn-outline-brand btn-sm read-more-btn">
+                قراءة المزيد
+              </button>
+              <div class="blog-fulltext">
+                <p>
+                  ابدأ بفهم DOM والتعامل مع الأحداث، ثم انتقل لمفاهيم كالدوال
+                  والمصفوفات، وأخيراً جرّب بناء تفاعلات بسيطة كعدّاد أو نموذج
+                  تحقق قبل الانتقال لأطر عمل متقدمة.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- مقال 4 -->
+          <div class="col-md-6">
+            <article class="card-custom p-4">
+              <span class="blog-date"
+                ><i class="bi bi-calendar3"></i> 28 يونيو 2026</span
+              >
+              <h3 class="mt-2">تصميم متجاوب: نصائح عملية</h3>
+              <p>
+                التجاوب لا يعني فقط أن يعمل الموقع على الجوال، بل أن تكون
+                التجربة مريحة على كل حجم شاشة...
+              </p>
+              <button class="btn btn-outline-brand btn-sm read-more-btn">
+                قراءة المزيد
+              </button>
+              <div class="blog-fulltext">
+                <p>
+                  استخدم وحدات مرنة كـ rem وnsi، اختبر نقاط التوقف الأساسية في
+                  Bootstrap، وتجنّب حشو الصفحة بعناصر ثقيلة تُبطئ التحميل على
+                  الجوال.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h4 class="brand-font text-white text-center">
+              <a class="navbar-brand navbar-brand-custom" href="index.html">
+                <img src="assets/img/logo.png" alt="logo" class="img-fluid" />
+              </a>
+            </h4>
+            <p class="small text-center">
+              سيرة ذاتية تفاعلية صُممت لتعكس شغفي بتطوير الواجهات الأمامية.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="text-white">روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li><a href="blog.html">المدونة</a></li>
+              <li><a href="shop.html">المتجر</a></li>
+              <li><a href="calculator.html">الحاسبة</a></li>
+              <li><a href="contact.html">تواصل معي</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-white">تابعني</h5>
+            <a href="#" class="social-icon-link" aria-label="لينكدإن"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/Company-RF"
+              class="social-icon-link"
+              aria-label="جيت هاب"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a href="#" class="social-icon-link" aria-label="تويتر"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center small mb-0">
+          © 2026 رهف فرحات. جميع الحقوق محفوظة.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      // تفاعل: زر "قراءة المزيد" يعرض / يخفي محتوى المقال كاملاً
+      document.querySelectorAll(".read-more-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const fullText = this.nextElementSibling;
+          const isShown = fullText.classList.toggle("show");
+          this.textContent = isShown ? "إخفاء" : "قراءة المزيد";
+        });
+      });
+    </script>
+  </body>
+</html>
